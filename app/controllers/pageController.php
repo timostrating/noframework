@@ -7,8 +7,7 @@
 class PageController extends BaseController {
 
     function index() {
-        $result = $this->DB->query("SELECT * FROM Categories", [], "Categorie");
-        $this->view->display('page/page_index.php', $result);        
+        $this->view->display('page/page_index.php');        
     } 
 
     function admin() {

@@ -113,7 +113,8 @@ class Database {
             }
             return $dbs->fetchAll();
         } catch (PDOException $e) {
-            die("DB ERROR - execute on database went wrong: ". $e->getMessage());
+            // die("DB ERROR - execute on database went wrong: ". $e->getMessage());
+            return null;
         }
     }
 }

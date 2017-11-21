@@ -180,7 +180,7 @@ class Router {
     public function register_run($url, $action, $valid) {
         $sql = "SELECT * FROM Pageviews WHERE url=:url";
         $array = [ ":url" => $url ];
-        $result = $this->DB->query($sql, $array, "Product");
+        $result = $this->DB->query($sql, $array, "Pageview");
 
         if(empty($result)) {
             $sql = "INSERT INTO Pageviews (url, action, count, valid) VALUES (?,?,?,?);";
