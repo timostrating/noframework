@@ -34,33 +34,9 @@ if(DEVELOPMENT) { $router->both('/seeds', 'Database#seed'); }  // for testing
 
 $router->get('/', 'PageController#index');
 
-// Contact
-$router->get('/contact', 'ContactController#new');
-$router->post('/contact/create', 'ContactController#create');
-
-
-// Product
-$router->get('/webshop', 'ProductController#index');
-$router->get('/webshop/:ID/show', 'ProductController#show'); 
-
-
-// Cart
-$router->get('/shoppingcart', 'CartController#index');
-
-$router->post('/shoppingcart/:ID/add',  'CartController#add');
-$router->post('/shoppingcart/:ID/subtract',  'CartController#subtract');
-$router->post('/shoppingcart/:ID/delete',   'CartController#delete'); 
- 
-
 // Blog
 $router->get('/blogs', 'BlogController#index');
 $router->get('/blogs/:ID/show',  'BlogController#show');
-
-
-// Categorie crud
-$router->get('/categories', 'CategorieController#index');
-$router->get('/categories/:ID/show',  'CategorieController#show');
-
 
 
 
@@ -80,16 +56,6 @@ $router->post('/users/update',  'UserController#update', 1);
 $router->post('/users/delete',   'UserController#delete', 1);         
 
 
-// Order
-$router->get('/profile/orders', 'OrderController#index', 1);
-$router->get('/profile/orders/:ID/show',  'OrderController#show', 1);
-$router->get('/orders/new',   'OrderController#new');   // we check this in the controller itself
-
-$router->post('/profile/orders/create', 'OrderController#create', 1);
-$router->post('/profile/orders/:ID/delete',   'OrderController#delete', 1); 
-
-
-
 
 /////////////////
 //   _ADMIN_   //
@@ -101,19 +67,3 @@ $router->resource('/admin/blogs', 'AdminBlogController', 2);
 
 // AdminUser crud
 $router->resource('/admin/users', 'AdminUserController', 2);
-
-// AdminContact crud
-$router->resource('/admin/contacts', 'AdminContactController', 2);
-
-// AdminOrder crud
-$router->resource('/admin/orders', 'AdminOrderController', 2);
-
-// AdminProduct crud
-$router->resource('/admin/products', 'AdminProductController', 2);
- 
-// AdminCategorie crud
-$router->resource('/admin/categories', 'AdminCategorieController', 2);
-
-// Demo
-$router->get('/demos', 'DemoController#index', 2);
-$router->get('/demos/:ID/show',  'DemoController#show', 2);

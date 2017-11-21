@@ -19,7 +19,7 @@ ini_set("display_errors", 1);
 
 // NoFramework paths
 define('ROOT', __DIR__.'/..');
-define('ROOT_PATH', '/pdfbooks/public');  
+define('ROOT_PATH', '/noframework/public');  
 
 
 // Route options
