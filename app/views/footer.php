@@ -1,5 +1,5 @@
     <footer>
-      <a href="https://www.github.com/timostrating/pdfbooks"> Gemaakt door: Yaimon, Javier, Richard, Kevin, <small> Chris</small>  en Timo   
+      <a href="https://www.github.com/timostrating/pdfbooks"> Made by the great people behind pdfbooks.nl  
     </footer>
   </body>
 </html>
