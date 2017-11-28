@@ -10,11 +10,13 @@ $DB->dropDB();
 $DB->createDB();
 
 
+
 // USER_TYPES
 $DB->execute("CREATE TABLE User_types (
     ID INT( 11 ) AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR( 255 ) NOT NULL);");  
 $DB->execute("INSERT INTO user_types (name) VALUES ('user'), ('admin')");
+
 
 
 // USERS
@@ -29,16 +31,18 @@ $DB->execute("CREATE TABLE Users (
         FOREIGN KEY (`user_type_id`)
         REFERENCES `user_types` (`id`) );");
 $DB->execute("INSERT INTO users (name, last_name, email, password, user_type_id) VALUES 
-    ('user', 'Veenstra', 'user@pdfbooks.nl', '".good_hash("lol123")."', '1'),
-    ('admin', 'Baans', 'admin@pdfbooks.nl', '".good_hash("lol123")."', '2')");
+    ('user', 'Veenstra', 'user@domain.nl', '".good_hash("lol123")."', '1'),
+    ('admin', 'Baans', 'admin@domain.nl', '".good_hash("lol123")."', '2')");
 
     
+
 // BLOGS
 $DB->execute("CREATE TABLE Blogs(
     ID INT( 11 ) AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR( 255 ) NOT NULL,  
     description TEXT NOT NULL,
     imgurl VARCHAR( 255 ) );");
+
 $DB->execute("INSERT INTO Blogs (title, description, imgurl) VALUES 
     ('Reprehenderit voluptates, dolore voluptatibus maxime perspiciatis.', ' 
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates, dolore voluptatibus maxime perspiciatis, exercitationem a distinctio ea modi esse quis labore veritatis quo odio perferendis non consequatur, laborum at. </p>
@@ -46,21 +50,22 @@ $DB->execute("INSERT INTO Blogs (title, description, imgurl) VALUES
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates, dolore voluptatibus maxime perspiciatis, exercitationem a distinctio ea modi esse quis labore veritatis quo odio perferendis non consequatur, laborum at. </p>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates, dolore voluptatibus maxime perspiciatis, exercitationem a distinctio ea modi esse quis labore veritatis quo odio perferendis non consequatur, laborum at. </p>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates, dolore voluptatibus maxime perspiciatis, exercitationem a distinctio ea modi esse quis labore veritatis quo odio perferendis non consequatur, laborum at. </p>',
-            'http://via.placeholder.com/550x350?text=Tes1'),
+            'http://via.placeholder.com/550x350?text=Test1'),
     ('Lorem ipsum dolor sit amet consectetur adipisicing elit. dolore voluptatibus maxime perspiciatis.', ' 
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates, dolore voluptatibus maxime perspiciatis, exercitationem a distinctio ea modi esse quis labore veritatis quo odio perferendis non consequatur, laborum at. </p>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates, dolore voluptatibus maxime perspiciatis, exercitationem a distinctio ea modi esse quis labore veritatis quo odio perferendis non consequatur, laborum at. </p>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates, dolore voluptatibus maxime perspiciatis, exercitationem a distinctio ea modi esse quis labore veritatis quo odio perferendis non consequatur, laborum at. </p>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates, dolore voluptatibus maxime perspiciatis, exercitationem a distinctio ea modi esse quis labore veritatis quo odio perferendis non consequatur, laborum at. </p>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates, dolore voluptatibus maxime perspiciatis, exercitationem a distinctio ea modi esse quis labore veritatis quo odio perferendis non consequatur, laborum at. </p>',
-            'http://via.placeholder.com/550x350?text=Tes1'),
+            'http://via.placeholder.com/550x350?text=Test2'),
     ('Dolore voluptatibus maxime perspiciatis amet consectetur adipisicing elit.', ' 
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates, dolore voluptatibus maxime perspiciatis, exercitationem a distinctio ea modi esse quis labore veritatis quo odio perferendis non consequatur, laborum at. </p>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates, dolore voluptatibus maxime perspiciatis, exercitationem a distinctio ea modi esse quis labore veritatis quo odio perferendis non consequatur, laborum at. </p>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates, dolore voluptatibus maxime perspiciatis, exercitationem a distinctio ea modi esse quis labore veritatis quo odio perferendis non consequatur, laborum at. </p>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates, dolore voluptatibus maxime perspiciatis, exercitationem a distinctio ea modi esse quis labore veritatis quo odio perferendis non consequatur, laborum at. </p>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates, dolore voluptatibus maxime perspiciatis, exercitationem a distinctio ea modi esse quis labore veritatis quo odio perferendis non consequatur, laborum at. </p>',
-            'http://via.placeholder.com/550x350?text=Tes1');");
+            'http://via.placeholder.com/550x350?text=Test3');");
+
 
 
 // PAGEVIEWS

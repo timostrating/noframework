@@ -6,16 +6,15 @@
 
 /* NoFramework css
    ------------------------------------------ */
-table, th, td {
-  border: 1px solid black;
-  padding: 5px 10px;
-}
-
 .smallform {
   display: block;
   width: 300px !important;
   margin: 0 auto;
   text-align: center;
+}
+
+ul {
+    padding-left: 0px;
 }
 
 
@@ -101,10 +100,19 @@ nav .icon {
     text-align: center;
 }
 
+.blog.content {
+    font-size: 18px;
+}
+
 
 
 /* Admin css
    ------------------------------------------ */
+table {
+    border: none;
+}
+
+
 .main-menu .fa {
     position: relative;
     width: 100%;
