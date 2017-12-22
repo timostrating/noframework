@@ -23,14 +23,14 @@ This will start as a copy of the pdfbooks repo. The next step will be to remove 
     - router/             -- View / ViewLoader Class
     helpers.php         -- All helper functions are in here
 
-- nonframework/         -- A collection of files that are used in the generators
+- nofamework/           -- A collection of files that are used in the generators
 
 - public/               -- The root of our application
     - assets/             -- Contains all assets for the web-application
     index.php             -- Root file
 
 index.html              -- Welcome message
-noframework.php         -- $ php ./noframework.php  for more info about this tool
+nofamework.php          -- $ php ./noframework.php  for more info about this tool
 </pre>
 
 
