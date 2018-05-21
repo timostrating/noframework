@@ -2,6 +2,22 @@
 
 This will start as a copy of the pdfbooks repo. The next step will be to remove all content and keep the framework in a minimal state.
 
+## Command line tool
+<pre>
+$ php nofamework.php
+ _   _       ______                                        _    
+| \ | |     |  ____|                                      | |   
+|  \| | ___ | |__   __ _ _ __ ___   _____      _____  _ __| | __
+| . ` |/ _ \|  __| / _` | '_ ` _ \ / _ \ \ /\ / / _ \| '__| |/ /
+| |\  | (_) | |   | (_| | | | | | |  __/\ V  V / (_) | |  |   < 
+|_| \_|\___/|_|    \__,_|_| |_| |_|\___| \_/\_/ \___/|_|  |_|\_\
+
+you can use the following functions
+    generate [name]     - generates a scaffold 
+    seed                - seeds the database
+    routes              - shows all SuperGlobal route paths 
+</pre>
+
 
 ## Structure
 <!-- You can not trust tabs here for a correct result so we use spaces instead -->
