@@ -18,6 +18,7 @@ you can use the following functions
     routes              - shows all SuperGlobal route paths 
 </pre>
 
+![gif](https://raw.githubusercontent.com/timostrating/noframework/master/example.gif)
 
 ## Structure
 <!-- You can not trust tabs here for a correct result so we use spaces instead -->
