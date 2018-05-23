@@ -18,7 +18,8 @@ you can use the following functions
     routes              - shows all SuperGlobal route paths 
 </pre>
 
-![gif](https://raw.githubusercontent.com/timostrating/noframework/master/example.gif)
+[![gif](https://raw.githubusercontent.com/timostrating/noframework/master/example.gif)](https://www.youtube.com/watch?v=1FdVZSmU0es)
+[Youtube](https://www.youtube.com/watch?v=1FdVZSmU0es)
 
 ## Structure
 <!-- You can not trust tabs here for a correct result so we use spaces instead -->
