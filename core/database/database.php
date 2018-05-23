@@ -13,7 +13,7 @@ class Database {
 
     private $dbtype = 'mysql';
     private $host = '127.0.0.1';
-    private $db   = 'pdfbooks';
+    private $db   = 'noframework';
     private $user = 'root';
     private $pass = '';
     private $charset = 'utf8';  // utf8mb4
